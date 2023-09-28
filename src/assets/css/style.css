@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #fff;
+  font-family: Montserrat;
+  overflow: hidden;
+}
+
+.form > input::-webkit-outer-spin-button,
+.form > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form > input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.form > input:focus,
+.form > input:not(:placeholder-shown),
+input.active {
+  margin-top: 25px;
+  height: 30px;
+}
+
+.form > input:focus ~ label,
+.form > input:not(:placeholder-shown) ~ label,
+label.active {
+  transform: translateY(0.4rem) scale(0.9);
+}
